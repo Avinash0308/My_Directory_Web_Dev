@@ -1,4 +1,7 @@
 {
     "editor.wordWrap": "off",
-    "html.format.wrapLineLength": 0
+    "html.format.wrapLineLength": 0,
+    "livePreview.portNumber": 3000,
+    "livePreview.hostIP": "127.0.0.1",
+    "editor.defaultFormatter": "mohd-akram.vscode-html-format"
 }
