@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Specifity Calculation
+            Universal Selector = 0;
+            Element or pseudo element = 1;
+            Class selector, attribute selector, and pseudo classes: 10;
+            Id Selector: 100;
+            Inline Styles: 1000;
+        */
+      .yellow {
+        color: aqua;
+      }
+      h1 {
+        color: red;
+      }
+      .cpurple {
+        color: purple;
+      }
+      .cred {
+        color: blue;
+      }
+      [data-x="a"] {
+        color: maroon;
+      }
+      h2 {
+        color: blue !important; /*Inline ka bhi baap*/
+      }
+      /* Specifity = 1 + 10 + 10 + 10 + 10 = 41 */
+      a.aviclass.rohan-class[href]:hover{
+        color:darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" id="Naya" data-x="a">
+        <pre>
+CSS Specificity: Inline Selector > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+            </pre
+        >
+      </h1>
+      <h2 style="color: red">This is it</h2>
+    </div>
+  </body>
+</html>

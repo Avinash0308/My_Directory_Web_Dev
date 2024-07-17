@@ -1,0 +1,33 @@
+p{
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    /*font-family: "Baloo 2", sans-serif;*/
+    font-family: "Baloo 2", sans-serif;
+    /*font-style:italic;*/
+    font-weight: 500;
+    text-decoration: overline;
+    /* font-size: 20px; */
+    line-height: 4;
+    letter-spacing: 1cqi;
+    text-decoration-color: aqua;
+}
+h2{
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* text-decoration-style: dotted; */
+    text-decoration-style:solid;
+    text-indent: 10%;
+    text-decoration-thickness: 3px;
+}
+h1{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+.lorem{
+    border: 2px solid red;
+    width: 145px;
+    /* text-overflow: ellipsis;*/
+    overflow: hidden; 
+    /* word-break: break-all; */
+    text-align: center;
+}

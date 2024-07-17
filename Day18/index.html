@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+
+        }
+        /* Margin Collapse: If margin of two elements are overlapping then the one with maximum margin will be applied only once*/
+        .box2{
+            color: red;
+            padding: 10px;
+            border: 2px solid black;
+            height: 200px;
+            margin: 35px;
+            box-sizing: border-box;
+        }
+        .box1{
+            color: green;
+            padding: 10px;
+            border: 2px solid blue;
+            height: 200px;
+            margin: 25px;
+            box-sizing: border-box; /* if we will not specify this only the content will occupy the mentioned height and width, but using it can make the whole box means padding border and content take given height excluding the margins. Margin is not included.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a boxxy</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+h1 {
+  /* color: darkred; */
+  /* color: #0bee0b */
+  /* color: rgb(103, 68, 215); */
+  /* color: rgb(57, 196, 175) */
+  /* color: hsla(187, 91%, 39%, 0.616); */
+  color: hsl(187,91%,39%);
+  background-color: blanchedalmond;
+}
