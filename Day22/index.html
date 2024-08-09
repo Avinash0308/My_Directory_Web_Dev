@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing in CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 1280px; */
+        width: 80vw; /* Width not work with inline elements*/
+        margin: auto; /*Margin also not work with inline elements*/
+        box-sizing: border-box;
+        background-color: aquamarine;
+        height: 10vh;
+      }
+      .container {
+        border: 2px solid black;
+        /* width: 1280px; */
+        width: 80vw; /* Width not work with inline elements*/
+        margin: 23px auto; /*Margin also not work with inline elements*/
+        box-sizing: border-box;
+        background-color: aquamarine;
+        font-size: 20px;
+        min-height: 60vh;
+      }
+      .container div {
+        font-size: 2em; /* Xem means X times the original font size*/
+        font-size: 2rem; /* Xrem means X times the root element, html is root element*/
+        border: 2px solid red;
+        width: 50%; /* parent's 50%*, works only if parent height is set*/
+      }
+      .container div div{
+        border: 2px solid blue;
+        width: 50%;
+
+      }
+      .mycont {
+        background-color: rgb(47, 202, 240);
+        box-sizing: border-box;
+        color: yellow;
+        margin: 23px auto;
+        border: 2px solid black;
+        font-size: 22px;
+        /*width: 100vmin; set width to minimum of height and width of viewport*/
+        /*width: 100vmax;  set width to maximum of height and width of viweport*/
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box.</div>
+    <span class="box">Hey I'm a span</span>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, impedit.
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        recusandae suscipit possimus iste placeat porro. Nulla delectus tempore
+        maxime autem, omnis dolore quibusdam deserunt suscipit quaerat
+        reprehenderit expedita pariatur eaque!
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo debitis dolor libero laboriosam ex perferendis odit ea vero officia, dicta maiores adipisci nesciunt!</div>
+      </div>
+    </div>
+    <div class="mycont">I am another conatianer;</div>
+  </body>
+</html>
