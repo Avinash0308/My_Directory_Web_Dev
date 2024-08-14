@@ -1,5 +1,5 @@
 {
-    "editor.wordWrap": "off",
+    "editor.wordWrap": "on",
     "html.format.wrapLineLength": 0,
     "livePreview.portNumber": 3000,
     "livePreview.hostIP": "127.0.0.1",
