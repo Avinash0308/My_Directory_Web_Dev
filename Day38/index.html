@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid red;
+            height: 80vh;
+            justify-content: center;
+            align-items: center; /*  when only single line*/
+            align-content: center; /* when multiple lines.*/
+            /* flex-wrap: wrap; */
+            /* there is not justify-item in flexbox */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow:row wrap; */
+            /* gap: 30px;
+            row-gap: 40px;
+            column-gap: 5px; */
+            gap: 20px 10px; /*first row then column*/
+        }
+        .item{
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            background-color: violet;
+            border: 2px solid black;
+            margin: 2px;
+            flex-shrink: 1;
+            align-self: flex-start;
+        }
+        .item1{
+            /* flex-grow: 3; */
+            flex-shrink: 2;
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item order-3">2</div>
+            <div class="item order-2">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
 </body>
 </html>
