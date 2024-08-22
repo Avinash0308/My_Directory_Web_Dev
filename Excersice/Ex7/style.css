@@ -24,37 +24,37 @@ ul li {
 ul li span {
   padding: 0 5px;
 }
-.main-body{
+.main-body {
   font-family: "Segoe UI";
   height: 70vh;
 }
-.first{
+.first {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 70px;
   gap: 30px;
 }
-.first-a{
+.first-a {
   font-size: 48px;
   color: #222;
   line-height: 1.3em;
 }
-.first-b > img{
+.first-b > img {
   width: 9vw;
   height: auto;
   margin-top: 10px;
 }
-.second{
+.second {
   font-size: 24px;
   font-weight: 400;
   padding-top: 35px;
   color: #222;
   text-align: center;
 }
-.third{
+.third {
   display: flex;
-  background-color: rgb(0,182,209);
+  background-color: rgb(0, 182, 209);
   border-radius: 5px;
   margin: 35px 39vw 0px 38vw;
   justify-content: center;
@@ -63,26 +63,78 @@ ul li span {
   height: 50px;
   cursor: pointer;
 }
-.third > a{
+.third > a {
   z-index: 10;
   color: white;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
-.third:hover{
-  background-color: rgb(0,150,209);
+.third:hover {
+  background-color: rgb(0, 150, 209);
 }
-.fourth{
+.fourth {
   display: flex;
   margin-top: 70px;
-  margin-left:150px;
+  margin-left: 150px;
   align-items: flex-end;
 }
-.fourth > h2{
+.fourth > h2 {
   font-weight: 400;
 }
-.fourth > a{
+.fourth > a {
   text-decoration: none;
   color: #222;
+}
+.final {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 302px);
+  gap: 50px;
+  font-family: "Segoe UI";
+  place-content: center;
+}
+.download {
+  display: grid;
+  max-width: 302px;
+  height: auto;
+  background-color: #f9f9f9;
+  padding: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+.language {
+  font-weight: 600;
+  font-size: 20px;
+}
+.eng-lang {
+  font-size: 12px;
+  margin-top: 16px;
+}
+.down-btn {
+  display: flex;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(92,184,92);
+  padding: 10px 15px;
+  margin-top: 16px;
+  margin-left: 25%;
+  justify-content: center;
+}
+.down-btn > a {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.code {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.code-id {
+    font-size: 8px;
+    font-weight: 500;
+    word-break: break-word;
+    margin-top: 16px;
 }
