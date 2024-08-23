@@ -87,7 +87,7 @@ ul li span {
   color: #222;
 }
 .final {
-  margin-top: 40px;
+  margin-top: 200px;
   display: grid;
   grid-template-columns: repeat(3, 302px);
   gap: 50px;
@@ -115,7 +115,7 @@ ul li span {
   display: flex;
   width: 100px;
   border-radius: 5px;
-  background-color: rgb(92,184,92);
+  background-color: rgb(92, 184, 92);
   padding: 10px 15px;
   margin-top: 16px;
   margin-left: 25%;
@@ -133,8 +133,14 @@ ul li span {
   margin-top: 16px;
 }
 .code-id {
-    font-size: 8px;
-    font-weight: 500;
-    word-break: break-word;
-    margin-top: 16px;
+  font-size: 8px;
+  font-weight: 500;
+  word-break: break-word;
+  margin-top: 16px;
+}
+@media screen and (max-width: 700px) {
+  .final {
+    display: grid;
+    grid-template-columns: repeat(1, 302px);
+  }
 }
