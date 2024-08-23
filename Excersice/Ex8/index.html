@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex8</title>
+    <style>
+      .container {
+        position: relative;
+        height: 80vh;
+        width: 80vw;
+        background-color: blue;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: Xaxis 5s linear 0s infinite , Yaxis 5s infinite;
+      }
+      @keyframes Yaxis{
+        0%{
+            margin-bottom: 0px;
+            animation-timing-function: ease-out;
+        }
+        22%{
+            margin-bottom: 300px;
+            animation-timing-function: ease-in;
+        }
+        44%{
+            margin-bottom: 0px;
+            animation-timing-function: ease-out;
+        }
+        60%{
+            margin-bottom: 200px;
+            animation-timing-function: ease-in;
+        }
+        76%{
+            margin-bottom: 0px;
+            animation-timing-function: ease-out;
+        }
+        88%{
+            margin-bottom: 100px;
+            animation-timing-function: ease-in;
+        }
+        100%{
+            margin-bottom: 0px;
+            animation-timing-function: ease-out;
+        }
+      }
+      @keyframes Xaxis{
+        from{
+
+        }
+        to{
+            transform: translateX(72vw);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
