@@ -42,7 +42,7 @@ else console.log("NO");
 oihsofoe
 oshfd*/
 
-let size = 11;
+let size = 12;
 if(size > 10){
     console.log("odhf");
 }
@@ -55,3 +55,12 @@ else{
 
 // ternary operator ?: // sab same hai, c++ chep rakhi hai, aish maro bhailog
 
+switch (size) {
+    case 11:
+        console.log("Chal Gaya");
+        break;
+
+    default:
+        console.log("Nahi Chala");
+        break;
+}
