@@ -1,0 +1,23 @@
+main{
+    border: 5px solid brown;
+    width: 50%;
+    width: 100vw;
+    width: 50vw;
+}
+
+header{
+    font-size: 2em;
+}
+
+h1{
+    /* font-size: 45px; */
+}
+
+section{
+    border: 5px dashed green;
+    width: 50%;
+    width: 50vw;
+    /* width: 200vw;
+    height: 200vw; */
+
+}
